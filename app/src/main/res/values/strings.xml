@@ -1,0 +1,238 @@
+<resources>
+
+    <!--
+    *
+    * APP & ACTIVITY NAMES
+    *
+    *-->
+
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">Inventory Manager</string>
+
+    <!-- Title for the activity to add a new product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_product">Add a Product</string>
+
+    <!-- Title for the activity to edit an existing product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+
+    <!--
+    *
+    * EMPTY STOCK TEXTS
+    *
+    *-->
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">Nothing in stock&#8230;</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a new product</string>
+
+    <!--
+    *
+    * MENU LABELS
+    *
+    *-->
+
+    <!-- Label for overflow menu option that inserts fake product data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all product data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <!-- Label for editor menu option to save product and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current product [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!--
+    *
+    * CATALOGUE LIST LABELS
+    *
+    *-->
+
+    <!-- Label for the unit price TextView [CHAR LIMIT=20] -->
+    <string name="unit_price_label">Unit Price :&#160;</string>
+
+    <!-- Label for the stock level TextView [CHAR LIMIT=20] -->
+    <string name="stock_level_label">Stock Level :&#160;</string>
+
+    <!-- Label for the button to sell products' units [CHAR LIMIT=20] -->
+    <string name="sell_button">Sell</string>
+
+    <!--
+    *
+    * EDITOR HEADERS
+    *
+    *-->
+
+    <!-- Label for product's image content description [CHAR LIMIT=30] -->
+    <string name="image_product_description">Image of the product</string>
+
+    <!-- Label for name category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_name">Name</string>
+
+    <!-- Label for supplier category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_supplier">Supplier</string>
+
+    <!-- Label for price information in the editor [CHAR LIMIT=30] -->
+    <string name="category_unit_price">Unit Price</string>
+
+    <!-- Label for currency of the product's unit price (EURO) [CHAR LIMIT=5] -->
+    <string name="currency_product_unit_price">€&#160;</string>
+
+    <!-- Label for stock information in the editor [CHAR LIMIT=30] -->
+    <string name="category_stock">Stock</string>
+
+    <!--
+    *
+    * EDIT TEXT HINTS
+    *
+    *-->
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_name">Product Name</string>
+
+    <!-- Text hint for supplier name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_supplier_name">Supplier Name</string>
+
+    <!-- Text hint for supplier email address field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_supplier_email">Supplier Email</string>
+
+    <!-- Text hint for the unit price field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_unit_price">Unit Price</string>
+
+    <!-- Text hint for the quantity field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_quantity">Quantity</string>
+
+    <!--
+    *
+    * ORDER EMAIL TEXT PARTS
+    *
+    *-->
+
+    <!-- Text for subject prefix [CHAR LIMIT=50] -->
+    <string name="email_subject_prefix">New order for :&#160;</string>
+
+    <!-- Text for starting greetings [CHAR LIMIT=NONE] -->
+    <string name="order_email_starting_greeting">Dear&#160;</string>
+
+    <!-- Text for part one of current stock statement [CHAR LIMIT=NONE] -->
+    <string name="order_email_current_stock_statement_part_one">Our current stock level for the product&#160;</string>
+
+    <!-- Text for part two of current stock statement [CHAR LIMIT=NONE] -->
+    <string name="order_email_current_stock_statement_part_two">&#160;is :&#160;</string>
+
+    <!-- Text for email request and end greetings [CHAR LIMIT=NONE] -->
+    <string name="order_email_request_end_greetings">We would like to order new units of this product to increase our stock.\n\n
+    Could you please get back to as soon as possible to discuss this order in further details.\n\nBest regards,\n\nYour Client</string>
+
+    <!-- Line jump [CHAR LIMIT=N/A] -->
+    <string name="order_email_jump_line">\n\n</string>
+
+    <!-- Comma [CHAR LIMIT=N/A] -->
+    <string name="order_email_comma">,</string>
+
+    <!-- Point [CHAR LIMIT=N/A] -->
+    <string name="order_email_point">.</string>
+
+    <!--
+    *
+    * DIALOG MESSAGES
+    *
+    *-->
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current product [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting all products [CHAR LIMIT=NONE] -->
+    <string name="delete_all_products_dialog_msg">Delete all products?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current product [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!--
+    *
+    * NOTIFICATION TOAST MESSAGES
+    *
+    *-->
+
+    <!-- Toast message in editor when new product has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_successful">Product saved</string>
+
+    <!-- Toast message in editor when current product was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_successful">Product updated</string>
+
+    <!-- Toast message in editor when current product was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_successful">Product deleted</string>
+
+    <!-- Toast message in catalog when a unit sale of given product has successfully been sold [CHAR LIMIT=NONE] -->
+    <string name="catalog_sell_product_item_successful">One unit has been sold</string>
+
+    <!-- Toast message in catalog when all products were successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="catalog_delete_all_products_successful">All products deleted</string>
+
+    <!-- Toast message in catalog when users tries to delete all products from an empty products table [CHAR LIMIT=NONE] -->
+    <string name="catalog_products_table_is_empty">The products database is empty !</string>
+
+    <!--
+    *
+    * ERROR TOAST MESSAGES
+    *
+    *-->
+
+    <!-- Toast message in editor when attempt to save a product without a name [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_name">Product requires a name !</string>
+
+    <!-- Toast message in editor when attempt to save a product without a supplier name [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_supplier_name">Product requires a supplier name !</string>
+
+    <!-- Toast message in editor when attempt to save a product without a supplier email address [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_supplier_email">Product requires a supplier\'s email address !</string>
+
+    <!-- Toast message in editor when attempt to save a product with an invalid supplier email address [CHAR LIMIT=NONE] -->
+    <string name="editor_product_invalid_supplier_email">The supplier\'s email address is not valid !</string>
+
+    <!-- Toast message in editor when attempt to save a product without a unit price [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_price">Product requires a price !</string>
+
+    <!-- Toast message in editor when attempt to save a product without a supplier email address [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_positive_price">Product requires a positive price !</string>
+
+    <!-- Toast message in editor when attempt to save a product with an empty stock level [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_positive_stock_level">Product requires a positive stock level !</string>
+
+    <!-- Toast message in editor when attempt to save a product without an image [CHAR LIMIT=NONE] -->
+    <string name="editor_product_requires_image">Product requires an image !</string>
+
+    <!-- Toast message in editor when new product has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_failed">Error with saving product</string>
+
+    <!-- Toast message in editor when current product has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_failed">Error with updating product</string>
+
+    <!-- Toast message in catalog when unit sell of a product has failed [CHAR LIMIT=NONE] -->
+    <string name="catalog_sell_product_item_failed">Error with selling product\'s item</string>
+
+    <!-- Toast message in catalog when unit sell of a product has failed because stock is null [CHAR LIMIT=NONE] -->
+    <string name="catalog_sell_product_item_failed_stock_empty">Stock for this product is empty !</string>
+
+    <!-- Toast message in editor when current product has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+
+    <!-- Toast message in editor when attempt to delete all product from database has failed [CHAR LIMIT=NONE] -->
+    <string name="catalog_delete_all_products_failed">Error with deleting the products</string>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/list_item_height"
+android:minHeight="@dimen/list_item_height"
+android:paddingStart="@dimen/activity_margin"
+android:orientation="vertical">
+
+    <TextView
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="33dp"
+    android:paddingStart="@dimen/list_view_margin"
+    android:gravity="bottom"
+    android:textAppearance="?android:textAppearanceLarge"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unit_price_label"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="@dimen/list_view_margin"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorListViewLabels"
+                android:text="@string/unit_price_label" />
+
+            <TextView
+                android:id="@+id/stock_level_label"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="@dimen/list_view_margin"
+                android:gravity="center_vertical"
+                android:text="@string/stock_level_label"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorListViewLabels" />
+
+            <ImageView
+                android:id="@+id/sell_button"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/transaction_button_margin"
+                android:focusable="false"
+                android:src="@drawable/img_sell_now" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unit_price_value"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/stock_level_value"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
